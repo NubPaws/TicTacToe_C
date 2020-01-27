@@ -5,6 +5,7 @@
 
 char board[SIZE][SIZE];
 
+// Prints the board in a pretty way
 void printBoard() {
 	int i, j;
 	printf("  0 1 2\n");
@@ -29,10 +30,12 @@ int isEmpty(int x, int y) {
 	return board[y][x] == ' ';
 }
 
+// Places a character at a position
 void place(int x, int y, char c) {
 	board[y][x] = c;
 }
 
+// Checks if a player won
 int checkWin(char c) {
 	int i;
 	for (i = 0; i < SIZE; i++) {
@@ -52,6 +55,7 @@ int checkWin(char c) {
 	return 0;
 }
 
+// Check if the board is full, meaning there was no winner but a draw
 int checkDraw() {
 	int draw = 0;
 	int i, j;
