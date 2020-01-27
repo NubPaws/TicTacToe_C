@@ -16,6 +16,7 @@ void printBoard() {
 	}
 }
 
+// This function resets the board to all ' ' (spaces)
 void resetBoard() {
 	int i, j;
 	for (i = 0; i < SIZE; i++)
