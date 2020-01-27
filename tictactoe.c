@@ -24,6 +24,7 @@ void resetBoard() {
 			board[i][j] = ' ';
 }
 
+// Checks if a position is empty by comparing it to a space
 int isEmpty(int x, int y) {
 	return board[y][x] == ' ';
 }
